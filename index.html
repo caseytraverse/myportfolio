@@ -35,17 +35,48 @@
       <img src="images/casey.png" alt="Casey Sexton pic">
     </div>
     <div class="landingR">
-      <h1>Good Afternoon.</h1><br>
-        <p>My name is Casey Sexton and I'm a UI/UX designer from Seacoast New England. I collaborate with startups, businesses and agencies to concept and design friendly digital experiences.</p>
+      <h1 class="no-hover" id="greet">Welcome</h1><br>
+        <phero>My name is Casey Sexton and I'm a UI/UX designer from Seacoast New England. I collaborate with startups, businesses and agencies to concept and design friendly digital experiences.</phero>
     </div>
   </div>
 </div>
            <div class="work">
-          <a href="#"><img src="images/alto-hero.png" alt="project image"></a>
+             <div class="worklayout">
+          <h1>alto</h1>
+          <p>collaborate Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        </div>
           <a href="#"><img src="images/alto-hero.png" alt="project image"></a>
         </div>
         <footer>
             <p>© 2019 Design & Developed by Casey Sexton.</p>
         </footer>
+        <script>
+        function changeText(){
+
+               var greetID = document.getElementById('greet');
+               var hour = new Date().getHours();
+
+               if (hour == 12) {
+                 greetID.innerHTML = 'Good afternoon.';
+               }
+               else if (hour > 12 && hour < 16){
+                 greetID.innerHTML = 'Good afternoon.';
+               }
+               else if (hour == 16){
+                 greetID.innerHTML = 'Good afternoon.';
+               }
+               else if (hour > 16){
+                 greetID.innerHTML = 'Good evening.';
+               }
+               else {
+                 greetID.innerHTML = 'Good morning.';
+               }
+             };
+
+             window.onload = function() {
+               changeText();
+             }
+
+</script>
 </body>
 </html>
