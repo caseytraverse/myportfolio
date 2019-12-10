@@ -1,7 +1,14 @@
+.work a {
+	color: #000000;
+	font-weight: 700;
+	text-decoration: none;
+}
+
 .worklayout {
 	float: left;
 	padding-left: 5%;
 	text-align: left;
+
 }
 
 .case-ulist-style {
@@ -38,6 +45,7 @@
 	max-width:600px;
 	position:relative;
 	float: right;
+	margin-bottom: 2em;
 }
 
 #contact input, #contact textarea, #contact button[type="submit"]
@@ -45,8 +53,6 @@
 
 #contact {
 	background:#FFFFFF;
-	/*padding:25px;
-	margin:50px 0;*/
 }
 
 #contact h3 {
@@ -56,7 +62,6 @@
 	font-size: 1.95em;
 	font-size: 30px;
 	font-weight: 700;
-	/* padding-top: 15px; */
 	padding-bottom: 15px;
 }
 
@@ -67,9 +72,9 @@
 }
 
 fieldset {
-/*	border: medium none !important;
+/*	border: medium none !important;*/
 	margin: 0 0 10px;
-	min-width: 100%;
+	/*min-width: 100%;
 	padding: 0;
 	width: 100%; */
 }
@@ -166,22 +171,22 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 32px;
 	font-weight: 700;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+/*	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;*/
 }
 h2 {
 	font-size: 30px;
 	font-weight: 700;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+/*	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;*/
 }
 h3 {
 	font-size: 22px;
 	font-weight: lighter;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+/*	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;*/
 }
 h4 {
 	font-size: 18px;
@@ -194,24 +199,24 @@ p {
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: normal;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+/*	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;*/
 }
 
 p2 {
   font-size: 18px;
   line-height:20px;
   font-weight: bold;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+/*	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;*/
 }
 
 p3 {
   font-size: 18px;
   line-height:20px;
   font-style: italic;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+/*	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;*/
 }
 
 phero {
@@ -219,7 +224,6 @@ phero {
 	line-height: 20px;
 	font-weight: normal;
 }
-
 
 ::selection {
     color: #000000;
@@ -260,7 +264,7 @@ nav .left {
 }
 
 header .logo-CS img {
-	width: 230px;
+	width: 250px;
 	height: 55px;
 }
 header nav ul {
@@ -268,7 +272,7 @@ header nav ul {
 	float: right;
 	margin: 0;
 	text-align: right;
-	-webkit-padding-start: 0;
+/*	-webkit-padding-start: 0;*/
 }
 header nav ul > li {
 	display: inline-block;
@@ -325,12 +329,14 @@ main div ul {
 	float: left;
   text-align: center;
   width: 100%;
+	display: flex;
 }
 .work a img {
 	float: right;
 	padding-right: 4.5%;
   padding-top: 50px;
-  width: 45%;
+  width: 89%;
+	margin-bottom: 2em;
 }
 
 /*-----work2-----*/
@@ -346,7 +352,7 @@ main div ul {
 /*-----footer-----*/
 footer {
   text-align: center;
-  margin: 60px 0;
+  margin: 20px 0;
 	clear: both;
 }
 footer p {
@@ -510,13 +516,13 @@ footer .four-column {
 	}
 
 	.casestudy a {
-		color: #4480A8;
+		color: #000000;
 		font-weight: 700;
 		text-decoration: none;
 	}
 
 	.casestudy .row {
-		margin: 2em 0;
+		margin: 4em 0;
 	}
 
 	.hero .cs1 {
@@ -569,6 +575,7 @@ footer .four-column {
 
 	.casestudy h2 {
 		margin-bottom: .5em;
+		margin-top: .5em;
 		font-size: 28px;
 		font-weight: 600;
 	}
@@ -999,7 +1006,7 @@ footer .four-column {
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 1;
+		z-index: 99;
 		padding: .25em 0;
 	}
 
@@ -1027,7 +1034,7 @@ footer .four-column {
 
 	.casestudy .container {
 		margin-top: 2em;
-		margin-bottom: 6em;
+		margin-bottom: 2em;
 	}
 
 	.case-temp {
@@ -1036,7 +1043,7 @@ footer .four-column {
 
 	.casestudy .eight-column {
 		display: inline-block;
-		margin: 0 15%;
+		margin: 0 20%;
 	}
 
 	.case-image .eight-column {
@@ -1056,7 +1063,7 @@ footer .four-column {
 	}
 
 	.casestudy .row {
-		margin: 1em 0;
+		margin: 0em 0;
 		display: inline-block;
 	}
 
@@ -1106,6 +1113,7 @@ footer .four-column {
 		line-height: 1.5em;
 		text-align: center;
 	}
+
 
 	footer h4 {
 		margin-top: 4em;
