@@ -1,3 +1,8 @@
+nav {
+	display: flex;
+	align-items: center;
+}
+
 .work a {
 	color: #000000;
 	font-weight: 700;
@@ -330,6 +335,7 @@ main div ul {
   text-align: center;
   width: 100%;
 	display: flex;
+	align-items: center;
 }
 .work a img {
 	float: right;
@@ -417,6 +423,8 @@ footer .four-column {
 
 	header nav {
 		padding: 1.5em 0;
+	/*	display: flex;
+		align-items: center;*/
 	}
 
 	nav .left {
@@ -1128,7 +1136,7 @@ footer .four-column {
 		width: 80%;
 	}
 	.fourteen-column {
-		width: 90%
+		width: 90%;
 	}
 	nav .left {
 		width: 50%;
