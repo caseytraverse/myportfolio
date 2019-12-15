@@ -1,6 +1,38 @@
-nav {
-	display: flex;
-	align-items: center;
+/*ABOUT*/
+.aboutRow  p {
+	margin: 0em 0;
+	display: inline-block;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: normal;
+}
+
+.aboutR {
+  margin-top: 0px;
+  padding-left: 120px;
+	padding-right: 4%;
+}
+
+.aboutWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  position: relative;
+}
+
+.aboutL {
+  padding-left: 4.5%;
+}
+
+.aboutL img {
+  max-width 600px;
+	max-height: 950px;
+}
+
+.case-ulist-style li {
+line-height: 28px;
 }
 
 .work a {
@@ -13,12 +45,11 @@ nav {
 	float: left;
 	padding-left: 5%;
 	text-align: left;
-
 }
 
 .case-ulist-style {
-	font-size: 18px;
-	line-height: 30px;
+	font-size: 24px;
+	line-height: 28px;
 	font-weight: normal;
 	list-style-type: circle;
 }
@@ -33,7 +64,7 @@ nav {
 
 
 #content {
-	width: 90%;
+	width: 100%;
 }
 
 .imgleft {
@@ -41,20 +72,22 @@ nav {
 }
 
 .imgemail {
-	width: 310px;
-	height: 310px;
+	width: 250px;
+	height: 250px;
 	padding-left: 5%;
 }
+
 /*-----CONTACT FORM-----*/
 .contactainer {
-	max-width:600px;
+	max-width: 600px;
 	position:relative;
 	float: right;
 	margin-bottom: 2em;
+	padding-right: 4%
 }
 
 #contact input, #contact textarea, #contact button[type="submit"]
-{ font:400 16px/20px roboto, sans-serif; }
+{ font:400 18px/20px roboto, sans-serif; }
 
 #contact {
 	background:#FFFFFF;
@@ -77,19 +110,19 @@ nav {
 }
 
 fieldset {
-/*	border: medium none !important;*/
-	margin: 0 0 10px;
-	/*min-width: 100%;
+/*border: medium none !important;*/
+	margin: 0 0 20px;
+/*min-width: 100%;
 	padding: 0;
 	width: 100%; */
 }
 
 #contact input, #contact textarea {
-	width:100%;
+	width: 80%;
 	border:1px solid #CCC;
 	background:#FFF;
 	margin:0 0 5px;
-	/* padding:10px; */
+/*padding:10px; */
 }
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
@@ -107,13 +140,14 @@ fieldset {
 
 #contact button[type="submit"] {
 	cursor:pointer;
-	width:100%;
+	width:40%;
 	border:none;
 	background:#215D85;
 	color:#FFF;
-	margin:0 0 5px;
+	margin:0 20% 5px;
 	padding:10px;
-	font-size:15px;
+	font-size:18px;
+	font-weight: 800;
 }
 
 #contact button[type="submit"]:hover {
@@ -145,64 +179,76 @@ fieldset {
 a.underline:hover {
 	border-bottom: 2px solid #4480A8;
 }
+
 a.underline:visited {
 	border-bottom: 2px solid #4480A8;
 }
+
 .underline-head {
 	border-bottom: 2px solid #4480A8;
 }
+
 .about .separate {
 	text-align: center;
 }
-html, body {
-	overflow-x: hidden;
-}
+
 h3 .anchor {
 	display: block;
 	position: relative;
 	top: -250px;
 	visibility: hidden;
 }
+
 html, body {
 	overflow-x: hidden;
 }
+
 body {
 	font-family: roboto, sans-serif;
 	color: #000000;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: raleway, sans-serif;
 }
+
 h1 {
-	font-size: 32px;
-	font-weight: 700;
-/*	-webkit-margin-before: 0;
+	font-size: 44px;
+	font-weight: 800;
+/*-webkit-margin-before: 0;
 	-webkit-margin-after: 0;*/
 }
+
 h2 {
-	font-size: 30px;
-	font-weight: 700;
+	font-size: 26px;
+	font-weight: 800;
+	padding-top: 15px;
+	padding-bottom: 15px;
+/*-webkit-margin-before: 0;
+	-webkit-margin-after: 0;*/
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 800;
 	padding-top: 15px;
 	padding-bottom: 15px;
 /*	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;*/
 }
-h3 {
-	font-size: 22px;
-	font-weight: lighter;
-/*	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;*/
-}
+
 h4 {
 	font-size: 18px;
 	font-weight: lighter;
 }
+
 h5 {
 	font-size: 16px;
 }
+
 p {
-	font-size: 18px;
-	line-height: 20px;
+	font-size: 24px;
+	line-height: 28px;
 	font-weight: normal;
 /*	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;*/
@@ -212,7 +258,7 @@ p2 {
   font-size: 18px;
   line-height:20px;
   font-weight: bold;
-/*	-webkit-margin-before: 0;
+/*-webkit-margin-before: 0;
 	-webkit-margin-after: 0;*/
 }
 
@@ -220,39 +266,75 @@ p3 {
   font-size: 18px;
   line-height:20px;
   font-style: italic;
-/*	-webkit-margin-before: 0;
+/*-webkit-margin-before: 0;
 	-webkit-margin-after: 0;*/
 }
 
 phero {
-	font-size: 18px;
-	line-height: 20px;
-	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+pland {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 300;
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+pcontact {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 300;
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+plight {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+pblack {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 600;
+	display: block;
+
 }
 
 ::selection {
     color: #000000;
     background: #4480A8;
 }
+
 .casestudy p {
 	font-family: roboto, serif;
-	line-height: 1.8em
+	line-height: 28px;
+/*padding-bottom: 75px*/
 }
 
 /* GRID */
 .container {
 	margin: auto;
 	position: relative;
-
 }
+
 .container:before,
 .container:after {
 	content: " ";
 	display: table;
 }
+
 .container:after {
 	clear: both;
 }
+
 .fourteen-column .twelve-column .ten-column .eight-column .six-column .four-column .three-column {
  	width: 96%;
  	float:left;
@@ -261,7 +343,6 @@ phero {
   margin:0 2% 20px;
 }
 
-
 /* HEADER */
 nav .left {
  	float: left;
@@ -269,29 +350,34 @@ nav .left {
 }
 
 header .logo-CS img {
-	width: 250px;
-	height: 55px;
+	width: 220px;
+	height: 30px;
 }
+
 header nav ul {
 	display: inline-block;
 	float: right;
 	margin: 0;
 	text-align: right;
-/*	-webkit-padding-start: 0;*/
+/*-webkit-padding-start: 0;*/
 }
+
 header nav ul > li {
 	display: inline-block;
  	font-family: brandon-grotesque, sans-serif;
 	font-style: normal;
-	font-weight: 900;
-	font-size: 1em;
+	font-weight: 800;
+	font-size: 24px;
 	list-style-type: none;
 	margin: 0 0px;
 }
+
 header nav ul > li > a {
 	color: #000000;
 	text-decoration: none;
+	display: block;
 }
+
 header nav ul > li > span > a {
 	color: #000000;
 	text-decoration: none;
@@ -302,21 +388,21 @@ main div ul {
 	-webkit-padding-start: 0;
 }
 
-/*Landing Page*/
-
+/* LANDING PAGE */
 .landing {
   height: 45vh;
   position: relative;
 }
+
 .landingWrapper {
   display: flex;
   justify-content: space-between;
-/*  margin-top: 30px;*/
+/*margin-top: 30px;*/
 }
 
 .landingR {
   margin-top: 4.5em;
-  padding-left: 50px;
+  padding-left: 120px;
 	padding-right: 4%;
 }
 
@@ -329,7 +415,7 @@ main div ul {
 	max-height: 250px;
 }
 
-/*-----work-----*/
+/* WORK */
 .work {
 	float: left;
   text-align: center;
@@ -337,6 +423,7 @@ main div ul {
 	display: flex;
 	align-items: center;
 }
+
 .work a img {
 	float: right;
 	padding-right: 4.5%;
@@ -350,6 +437,7 @@ main div ul {
   width: 100%;
   text-align: center;
 }
+
 .work2 a img {
   margin: 1%;
   width: 92%;
@@ -361,6 +449,7 @@ footer {
   margin: 20px 0;
 	clear: both;
 }
+
 footer p {
   color: #404348;
 }
@@ -369,9 +458,7 @@ footer p {
 	padding-left: 15px;
 }
 
-
 /* FOOTER */
-
 footer {
 	background-size: cover;
 }
@@ -423,8 +510,6 @@ footer .four-column {
 
 	header nav {
 		padding: 1.5em 0;
-	/*	display: flex;
-		align-items: center;*/
 	}
 
 	nav .left {
@@ -699,6 +784,7 @@ footer .four-column {
 		width: 100%;
 		z-index: 99;
 		padding: .25em 0;
+		overflow: hidden
 	}
 
 	.navbar .items {
@@ -706,9 +792,9 @@ footer .four-column {
 	}
 
 	.navbar ul li {
-		font-family: roboto, sans-serif;
-		font-size: .8em;
-		font-weight: 700;
+		font-family: brandon-grotesque, sans-serif;
+		font-size: 24px;
+		font-weight: 800;
 		text-transform: uppercase;
 		list-style-type: none;
 		display: inline-block;
@@ -975,7 +1061,7 @@ footer .four-column {
 	}
 
 	.hero .right  {
-		border-top: 5px solid #000000;
+		border-top: 0px solid #000000;
 	}
 
 	.case-description h1 {
@@ -987,7 +1073,7 @@ footer .four-column {
 
 	.case-description p {
 		font-size: 1.1em;
-		line-height: 1.2em;
+		line-height: 28px;
 	}
 
 	.case-description h3 {
@@ -1025,14 +1111,13 @@ footer .four-column {
 	.navbar ul li {
     font-family: brandon-grotesque, sans-serif;
     font-style: normal;
-    font-weight: 100;
-		font-size: .8em;
-		font-weight: 700;
+		font-size: 24px;
+		font-weight: 800;
 		text-transform: uppercase;
 		list-style-type: none;
 		display: inline-block;
-		margin: 0 5em;
-		padding: 2em 0;
+		margin: 0 2em;
+		padding: 100px 0;
 	}
 
 	.navbar ul li a {
@@ -1041,12 +1126,12 @@ footer .four-column {
 	}
 
 	.casestudy .container {
-		margin-top: 2em;
+		margin-top: 0em;
 		margin-bottom: 2em;
 	}
 
 	.case-temp {
-		width: 70%;
+		width: 100%;
 	}
 
 	.casestudy .eight-column {
@@ -1100,7 +1185,9 @@ footer .four-column {
 
 	.casestudy img {
 		width: 100%;
-		margin-bottom:1em;
+/*		margin-bottom:11em;  */
+		padding-top: 100px;
+		padding-bottom: 50px;
 	}
 
 	.casestudy .cs-img-cap {
@@ -1118,8 +1205,9 @@ footer .four-column {
 		color: #A2A2A2;
 		font-family: roboto, sans-serif;
 		font-size: 1em;
-		line-height: 1.5em;
+		line-height: 28px;
 		text-align: center;
+		padding-bottom: 35px;
 	}
 
 
