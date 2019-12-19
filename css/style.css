@@ -1,7 +1,11 @@
-/*img {
+/*RESPONSIVE FONT SIZING*/
+/*html { font-size: 1.25vw; }*/
+
+/*RESPONSIVE IMAGES*/
+img {
 	max-width: 100%;
 	height: auto;
-}*/
+}
 
 a {
 	font-size: 1.5rem;
@@ -47,6 +51,7 @@ a {
 
 .case-ulist-style li {
 line-height: 28px;
+font-weight: 300;
 }
 
 .work a {
@@ -315,8 +320,25 @@ plight {
 	font-size: 1.5rem;
 	line-height: 28px;
 	font-weight: 300;
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
+pitalic {
+	font-size: 1.5rem;
+	line-height: 28px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+pabout {
+	font-size: 1.5rem;
+	line-height: 28px;
+	font-weight: 300;
+	display: block;
+	padding-bottom: 20px;
+}
 
 
 ::selection {
@@ -704,6 +726,7 @@ footer .four-column {
 		text-align: center;
 	}
 
+
 /* TABLETS */
 @media (min-width: 768px) {
 	.container {
@@ -728,7 +751,7 @@ footer .four-column {
 
 	header span {
 		margin: 0 0px;
-		padding: 0 100px;
+		padding: 0 50px;
 	}
 
 	nav .left {
@@ -797,6 +820,10 @@ footer .four-column {
 		padding: .25em 0;
 		overflow: hidden
 	}
+
+	/*phero {
+		padding-bottom: 2em;
+	}*/
 
 	.navbar .items {
 		text-align: center;
