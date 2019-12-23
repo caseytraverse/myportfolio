@@ -25,7 +25,6 @@ a {
 
 .aboutR {
   margin-top: 0px;
-  padding-left: 80px;
 	padding-right: 4.5%;
 }
 
@@ -44,11 +43,13 @@ a {
 
 .aboutL {
   padding-left: 4.5%;
+	float: left;
 }
 
 .aboutL img {
   max-width 600px;
 	max-height: 1075px;
+	padding-right: 80px;
 }
 
 .case-ulist-style li {
@@ -436,18 +437,21 @@ main div ul {
 }
 
 .landingR {
-  margin-top: 4.5em;
+  margin-top: 0em;
   padding-left: 120px;
 	padding-right: 4%;
+	padding-top: 40px;
 }
 
 .landingL {
   padding-left: 4.5%;
+	float: left;
 }
 
 .landingL img {
   max-width 250px;
 	max-height: 250px;
+	padding-right: 80px;
 }
 
 /* WORK */
