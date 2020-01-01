@@ -173,7 +173,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-	background:#4480A8;
+	background:#215D85;
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
@@ -199,15 +199,15 @@ fieldset {
 }
 
 a.underline:hover {
-	border-bottom: 2px solid #4480A8;
+	border-bottom: 2px solid #215D85;
 }
 
 a.underline:visited {
-	border-bottom: 2px solid #4480A8;
+	border-bottom: 2px solid #215D85;
 }
 
 .underline-head {
-	border-bottom: 2px solid #4480A8;
+	border-bottom: 2px solid #215D85;
 }
 
 .about .separate {
@@ -345,7 +345,7 @@ pabout {
 
 ::selection {
     color: #000000;
-    background: #4480A8;
+    background: #215D85;
 }
 
 .casestudy p {
