@@ -17,56 +17,164 @@
  <title>CASEY SEXTON</title>
 
  <!-- CSS -->
+ <link rel="stylesheet" href="css/simplemenu.css">
  <link rel="stylesheet" href="css/reset.css">
  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
  <header class="header-background">
-   <nav class="container fourteen-column">
-     <div class="imgleft">
-       <a href="index.html" class="logo-CS"><img src="images/logo-CS.png" alt="logo"></a>
-     </div>
-     <div class="right">
-       <ul>
-         <li><a href="project.html" class="underline">work</a></li>
-         <li><span><a href="about.html" class="underline">about</a></span></li>
-         <li><a href="contact.html" class="underline">contact</a></li>
-       </ul>
-     </div>
-   </nav>
+   <div class="wrapper">
+       <nav class="fourteen-column">
+       	 <div class="responsive-menu">
+         	<div class="mobilenav topnav">
+                <li><a href="project.html" class="underline">work</a></li>
+             	<li><a href="about.html" class="underline">about</a></li>
+             	<li><a href="contact.html" class="underline">contact</a></li>
+            </div>
+         	<a href="javascript:void(0)" class="icon">
+                <div class="hamburger">
+                    <div class="menui top-menu"></div>
+                    <div class="menui mid-menu"></div>
+                    <div class="menui bottom-menu"></div>
+                </div>
+            </a>
+         </div>
+         <div class="left">
+           <a href="index.html" class="logo-CS"><img src="images/logo-CS.png" alt="logo"></a>
+         </div>
+         <div class="right">
+           <ul>
+             <li><a href="project.html" class="underline">work</a></li>
+             <li><a href="about.html" class="underline">about</a></li>
+             <li><a href="contact.html" class="underline">contact</a></li>
+           </ul>
+         </div>
+         <div class="clear"></div>
+       </nav>
+   </div>
  </header>
-<div id="content">
+<div class="wrapper"><div class="left leftnew" style="display:inline-block"><img src="images/alto-image-22.png" class="imgemail"/></div>
   <div class="contactainer">
-  <form id="contact" action="" method="post">
+   <form name="contact" id="contact" method="post" onSubmit="javascript:;return BotSubsCheck();return false;">
     <h1>Let's connect</h1>
     <pcontact>I can’t wait to hear from you. Fill out the form below and I’ll get back to you shortly</pcontact>
+    <p id="BotSubsCheckP_Colors" style="color:#FF0000;font-weight:bold;font-size:15px;margin:0px;"></p>
     <fieldset>
-      <input placeholder="Name" type="text" tabindex="1" required autofocus>
+      <input placeholder="Name" type="text" tabindex="1" name="name" id="name" autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Email" type="email" tabindex="2" required>
+      <input placeholder="Email" type="text" name="email" id="email" tabindex="2">
     </fieldset>
     <fieldset>
-      <input placeholder="Phone" type="tel" tabindex="3" required>
+      <input placeholder="Phone" type="text" name="phone" id="phone" tabindex="3">
     </fieldset>
     <fieldset>
-      <input placeholder="http://" type="url" tabindex="4" required>
+      <input placeholder="http://" type="text" name="website" id="website" tabindex="4">
     </fieldset>
     <fieldset>
-      <textarea placeholder="Message" tabindex="5" required></textarea>
+      <textarea placeholder="Message" tabindex="5" name="message" id="message"></textarea>
     </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    <fieldset style="text-align: center;">
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onClick="return BotSubsCheck();return false;">Submit</button>
     </fieldset>
   </form>
 
 
 </div>
-<div class="left"><img src="images/alto-image-22.png" class="imgemail"/></div>
+
 </div>
-        <footer>
-            <p>© 2019 Design & Developed by Casey Sexton.</p>
-        </footer>
+<footer>
+	<div class="wrapper">
+    	<p>© 2019 Design & Developed by Casey Sexton.</p>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"> </script>
+<script src="js/simplemenu.js"> </script>
+<script>
+function BotSubsCheck()
+{
+	form=document.contact;
+	if(form.name.value.split(" ").join("")=="")
+	{
+		alert("Please enter your name.")
+		form.name.focus();
+		return false;
+	}
+	if(form.email.value.split(" ").join("")=="")
+	{
+		alert("Please enter your email address.")
+		form.email.focus();
+		return false;
+	}
+	else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value)))
+	{
+		alert("Please enter a proper email address.");
+		form.email.focus();
+		return false;
+	}
+	if(form.phone.value.split(" ").join("")=="")
+	{
+		alert("Please enter your phone.")
+		form.phone.focus();
+		return false;
+	}
+	else
+	{
+		BotSubsEmail_LoadAllColors();
+		return false;
+	}
+}
+function BotSubsEmail_LoadAllColors()
+{
+      name=document.getElementById("name").value;
+	  emails=document.getElementById("email").value;
+	  phone=document.getElementById("phone").value;
+	  website=document.getElementById("website").value;
+	  message=document.getElementById("message").value;
+    var http3_SDLS12 = false;
+	if(navigator.appName == "Microsoft Internet Explorer") {
+	  http3_SDLS12 = new ActiveXObject("Microsoft.XMLHTTP");
+	} else {
+	  http3_SDLS12 = new XMLHttpRequest();
+	}
+	http3_SDLS12.abort();
+	http3_SDLS12.open("GET", "ajax_contact.php?email="+emails+"&name="+name+"&phone="+phone+"&website="+website+"&message="+message, true);
+	http3_SDLS12.onreadystatechange=function()
+	{
+	 // alert(http3_SDLS12.responseText);
+	  if(http3_SDLS12.readyState == 4)
+	  {
+		  if(http3_SDLS12.responseText==1)
+		  {
+			document.getElementById("BotSubsCheckP_Colors").innerHTML="Please enter email address.";
+			return false;
+		  }
+		  else if(http3_SDLS12.responseText==3)
+		  {
+			document.getElementById("BotSubsCheckP_Colors").innerHTML="Your message has been sent!";
+			document.getElementById("name").value='';
+			document.getElementById("email").value='';
+			document.getElementById("phone").value='';
+			document.getElementById("website").value='';
+			document.getElementById("message").value='';
+			return false;
+		  }
+		  if(http3_SDLS12.responseText==2)
+		  {
+			document.getElementById("BotSubsCheckP_Colors").innerHTML="Thank You!";
+			document.getElementById("name").value='';
+			document.getElementById("email").value='';
+			document.getElementById("phone").value='';
+			document.getElementById("website").value='';
+			document.getElementById("message").value='';
+			return false;
+		  }
+	  }
+	}
+	http3_SDLS12.send(null);
+}
+</script>
 </body>
 </html>

@@ -18,27 +18,45 @@
  <title>CASEY SEXTON</title>
 
  <!-- CSS -->
+ <link rel="stylesheet" href="css/simplemenu.css">
  <link rel="stylesheet" href="css/reset.css">
  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
  <header class="header-background">
-   <nav class="container fourteen-column">
-     <div class="left">
-       <a href="index.html" class="logo-CS"><img src="images/logo-CS.png" alt="logo"></a>
-     </div>
-     <div class="right">
-       <ul>
-         <li><a href="project.html" class="underline">work</a></li>
-         <li><span><a href="about.html" class="underline">about</a></span></li>
-         <li><a href="contact.html" class="underline">contact</a></li>
-       </ul>
-     </div>
-   </nav>
+   <div class="wrapper">
+       <nav class="fourteen-column">
+       	 <div class="responsive-menu">
+         	<div class="mobilenav topnav">
+                <li><a href="project.html" class="underline">work</a></li>
+             	<li><a href="about.html" class="underline">about</a></li>
+             	<li><a href="contact.html" class="underline">contact</a></li>
+            </div>
+         	<a href="javascript:void(0)" class="icon">
+                <div class="hamburger">
+                    <div class="menui top-menu"></div>
+                    <div class="menui mid-menu"></div>
+                    <div class="menui bottom-menu"></div>
+                </div>
+            </a>
+         </div>
+         <div class="left">
+           <a href="index.html" class="logo-CS"><img src="images/logo-CS.png" alt="logo"></a>
+         </div>
+         <div class="right">
+           <ul>
+             <li><a href="project.html" class="underline">work</a></li>
+             <li><a href="about.html" class="underline">about</a></li>
+             <li><a href="contact.html" class="underline">contact</a></li>
+           </ul>
+         </div>
+         <div class="clear"></div>
+       </nav>
+   </div>
  </header>
 
-
+<div class="wrapper">
 <div class="landing">
 <!---  <div class="landingWrapper"> --->
     <div class="landingL">
@@ -52,14 +70,19 @@
 </div>
            <div class="work">
              <div class="worklayout">
-          <h1>alto</h1>
-          <pland>Collaborative cloud storage and organizational platform.</pland>
+          		<h1>alto</h1>
+          		<pland>Collaborative cloud storage and organizational platform.</pland>
           <a href="project.html" class="underline">View case study ></a>
-        </div>
+        	</div>
+            <div class="work-right">
           <a href="project.html"><img src="images/alto-hero.png" alt="project image"></a>
+          </div>
         </div>
+</div>
         <footer>
-            <p>© 2019 Design & Developed by Casey Sexton.</p>
+        	<div class="wrapper">
+            	<p>© 2019 Design & Developed by Casey Sexton.</p>
+            </div>
         </footer>
         <script>
         function changeText(){
@@ -89,5 +112,8 @@
              }
 
 </script>
+<script src="js/jquery.min.js"> </script>
+
+<script src="js/simplemenu.js"> </script>
 </body>
 </html>
