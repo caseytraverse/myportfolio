@@ -99,6 +99,11 @@ font-weight: 300;
 	max-height: 250px;
 }
 
+.socials {
+	max-width: 50px;
+	max-height: 50px;
+}
+
 /*-----CONTACT FORM-----*/
 .contactainer {
 	max-width: 700px;
@@ -426,11 +431,14 @@ main div ul {
 /* LANDING PAGE */
 .landing {
   position: relative;
+	/*padding-top: 2em; ADDED to design to bring hero section down and give it more space
+	however, I would need to edit the spacing for all the other pages if I did this */
 }
 
 .landingWrapper {
   display: flex;
   justify-content: space-between;
+	padding-top: 4em;
 /*margin-top: 30px;*/
 }
 
@@ -455,6 +463,8 @@ main div ul {
   width: 100%;
 	display: flex;
 	align-items: center;
+	/*padding-top: 12em; ADDED this to bring space to hero section and bring th work selection
+	down a bit so that my design can breath*/
 }
 
 .work a img {
