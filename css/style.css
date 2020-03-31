@@ -13,6 +13,7 @@ img {
 	height: auto;
 }
 
+
 a {
 	font-size: 1.5rem;
   font-weight: 800;
@@ -475,6 +476,10 @@ main div ul {
 .work-right {
 	width: 100%;
 }
+.work-left {
+	width: 100%;
+	margin-right:30px;
+}
 /*-----work2-----*/
 .work2 {
   width: 100%;
@@ -543,6 +548,18 @@ footer .four-column {
 	font-weight: 100;
 	color: #BBBBBB;
 }
+
+/* new */
+
+
+.table{width:100%;}
+.table th{background:#ccc; font-weight:bold; text-align:left; padding:5px 10px; border:2px solid #fff;}
+.table td{background:#f3f3f3;  padding:5px 10px; border:2px solid #fff;}
+
+#socialContact{margin-top:30px; text-align: center; display: flex; justify-content: space-between;}
+#socialContact li{display:inline-block;}
+
+.cs-img.eight-column{width:100%;}
 
 /* MEDIA QUERIES */
 /* MOBILES */
@@ -733,6 +750,10 @@ footer .four-column {
 		margin-top: 0;
 		text-align: center;
 	}
+
+
+	/* new */
+	.visible-xs{display:none;}
 
 
 /* TABLETS */
@@ -932,6 +953,9 @@ footer .four-column {
 		right: 100%;
 		margin-right: 15px;
 	}
+
+	#navRow{width:100%; margin:0 -15px;}
+	.navCol{padding:0 15px; width:33.33333333%; float:left;}
 }
 
 /* LAPTOPS & DESKTOPS */
@@ -1299,6 +1323,10 @@ header nav ul li {padding:0 0 0 50px;}
 .navbar ul li {margin: 0 7px;}
 .navbar ul li a {font-size: 18px;font-weight: 400;}
 
+#socialContact{margin:30px 0; text-align:center; display:block;}
+#socialContact li{margin-right:15px;}
+#socialContact li:last-child{margin:0;}
+
 }
 
 
@@ -1338,6 +1366,13 @@ header nav ul > li > a{font-size:22px;}
 .cs-img p{line-height:24px;font-size:18px;margin-bottom:5px;}
 .case-image pitalic{line-height:24px;font-size:18px;}
 .case-image h4{padding:15px 0 10px;font-size:22px;}
+
+/* new */
+.hidden-xs{display:none;}
+.visible-xs{display:block;}
+.work:last-child{margin-top:30px}
+
+
 
 }
 
