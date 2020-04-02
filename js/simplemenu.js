@@ -5,11 +5,26 @@ return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeTyp
 
 
 
+
+
+
 $(document).ready(function () {
-    $(".icon").click(function () {
+    $(".icon").click(function (a) {
         $(".mobilenav").fadeToggle(500);
         $(".top-menu").toggleClass("top-animate");
         $(".mid-menu").toggleClass("mid-animate");
-        $(".bottom-menu").toggleClass("bottom-animate");
+		$(".bottom-menu").toggleClass("bottom-animate");
     });
+});
+
+
+
+$(document).ready(function () {
+$(".underline").click(function () {
+
+$(".mobilenav").css({"display":"none"});
+$(".top-menu").removeClass("top-animate");
+$(".mid-menu").removeClass("mid-animate");
+$(".bottom-menu").removeClass("bottom-animate");
+});
 });

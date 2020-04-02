@@ -762,61 +762,16 @@ target="_blank"><img src="images/alto-image-20.png" alt="Version 2" class="wow f
 <script src="js/simplemenu.js"> </script>
 
 <script src="js/wow.min.js"></script>
-              <script>
+<script>
               new WOW().init();
               </script>
 
+
+<script src="js/chartjs-plugin-datalabels.min.js"></script>
 <script>
 var myChart = document.getElementById('myChart').getContext('2d');
 
-
-Chart.pluginService.register({
-  beforeRender: function (chart) {
-    if (chart.config.options.showAllTooltips) {
-        // create an array of tooltips
-        // we can't use the chart tooltip because there is only one tooltip per chart
-        chart.pluginTooltips = [];
-        chart.config.data.datasets.forEach(function (dataset, i) {
-            chart.getDatasetMeta(i).data.forEach(function (sector, j) {
-                chart.pluginTooltips.push(new Chart.Tooltip({
-                    _chart: chart.chart,
-                    _chartInstance: chart,
-                    _data: chart.data,
-                    _options: chart.options.tooltips,
-                    _active: [sector]
-                }, chart));
-            });
-        });
-
-        // turn off normal tooltips
-        chart.options.tooltips.enabled = false;
-    }
-},
-  afterDraw: function (chart, easing) {
-    if (chart.config.options.showAllTooltips) {
-        // we don't want the permanent tooltips to animate, so don't do anything till the animation runs atleast once
-        if (!chart.allTooltipsOnce) {
-            if (easing !== 1)
-                return;
-            chart.allTooltipsOnce = true;
-        }
-
-        // turn on tooltips
-        chart.options.tooltips.enabled = true;
-        Chart.helpers.each(chart.pluginTooltips, function (tooltip) {
-            tooltip.initialize();
-            tooltip.update();
-            // we don't actually need this since we are not animating tooltips
-            tooltip.pivot();
-            tooltip.transition(easing).draw();
-        });
-        chart.options.tooltips.enabled = false;
-    }
-  }
-});
-
-
-Chart.defaults.global.defaultFontSize = 18;
+Chart.defaults.global.defaultFontSize = 14;
 Chart.defaults.global.defaultFontColor = '#000';
 Chart.defaults.scale.ticks.beginAtZero = true;
 
@@ -824,11 +779,11 @@ var massPopChart = new Chart(myChart, {
 type: 'pie',
 
 data:{
-labels: ['Yes','No'],
+labels: ['No','Yes'],
 datasets:[{
 label: 'Population',
-data: [17, 4],
-backgroundColor:['#109CF1', '#F7685B'],
+data: [4, 17],
+backgroundColor:['#F7685B', '#109CF1'],
 borderWidth: 1,
 borderColor: '#777',
 hoverBorderWidth:3,
@@ -839,11 +794,32 @@ hoverBorderColor: '#000'
 
 options:{
 showAllTooltips: true,
-title:{display:true, text:'Do you use any collaborative features provided by your cloud storage platform?', fontSize:22,},
+title:{display:true, text:'Do you use any collaborative features provided by your cloud storage platform?', fontSize:22, fontStyle:'normal',},
 legend:{display:true, position:'right'},
 layout:{padding:{left:0, right:0, bottom:0, top:30}},
+tooltips:{enabled:true},
 
+
+plugins: {
+       datalabels: {
+         formatter: (value, ctx) => {
+
+           let sum = 0;
+           let dataArr = ctx.chart.data.datasets[0].data;
+           dataArr.map(data => {
+             sum += data;
+           });
+           let percentage = (value * 100 / sum).toFixed(2) + "%";
+           return percentage;
+
+
+         },
+         color: '#fff',
+       }
+     }
 }
+
+
 
 });
 </script>
