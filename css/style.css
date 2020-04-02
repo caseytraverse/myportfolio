@@ -50,7 +50,7 @@ a {
 }
 
 .aboutL img {
-  max-width 600px;
+  max-width: 600px;
 	max-height: 1075px;
 	padding-right: 80px;
 }
@@ -560,7 +560,7 @@ footer .four-column {
 #socialContact li{display:inline-block;}
 
 .cs-img.eight-column{width:100%;}
-
+.cs-caption.two-column p{position:static !important;}
 /* MEDIA QUERIES */
 /* MOBILES */
 @media (min-width: 320px) {
@@ -1399,6 +1399,5 @@ nav .left{float:right;}
 .casestudy h2 {font-size: 20px;line-height: 24px;}
 .cs-caption.two-column p{font-size:18px;line-height:24px;}
 .casestudy p {font-size:22px;margin-bottom:10px;}
-
-
+}
 }

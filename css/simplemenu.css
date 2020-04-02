@@ -55,7 +55,7 @@
 }
 
 .icon {
-  z-index: 999;
+  z-index: 9999;
   position: absolute;
   /*    background: rgba(0, 0, 0, 0.21);*/
   display: block;
@@ -80,6 +80,7 @@
   background: #215D85;
   /*opacity: 0.9;*/
 }
+.mobilenav:click{display:none;}
 
 .mobilenav li {
   list-style-type: none;
@@ -96,4 +97,4 @@
   width: 100%;
 }
 
-.mobilenav li:first-child { margin-top: 60px; }
+.mobilenav li:first-child {margin-top: 60px; }
