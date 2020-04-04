@@ -348,7 +348,6 @@ p.about {
 	padding-bottom: 20px;
 }
 
-
 ::selection {
     color: #000000;
     background: #215D85;
@@ -359,6 +358,8 @@ p.about {
 	line-height: 28px;
 /*padding-bottom: 75px*/
 }
+
+
 
 /* GRID */
 .container {
@@ -432,7 +433,7 @@ main div ul {
 /* LANDING PAGE */
 .landing {
   position: relative;
-	/*padding-top: 2em; ADDED to design to bring hero section down and give it more space
+	padding-top: 2em; /*ADDED to design to bring hero section down and give it more space
 	however, I would need to edit the spacing for all the other pages if I did this */
 }
 
@@ -464,6 +465,7 @@ main div ul {
   width: 100%;
 	display: flex;
 	align-items: center;
+	/*padding-top: 11em;
 	/*padding-top: 12em; ADDED this to bring space to hero section and bring th work selection
 	down a bit so that my design can breath*/
 }
@@ -494,7 +496,7 @@ main div ul {
 /*-----footer-----*/
 footer {
   text-align: center;
-  margin: 20px 0;
+  margin: 40px 0;
 	clear: both;
 }
 
@@ -962,6 +964,10 @@ footer .four-column {
 @media (min-width: 1200px) {
 
 
+	.work {
+		padding-top: 11em;
+}
+
 	nav .right {
 		width: 50%;
 		padding: 0 0;
@@ -1275,6 +1281,11 @@ footer .four-column {
 		padding-bottom: 35px;
 	}
 
+.backToTop {
+text-align: center;
+displau: block;
+padding: 20px;
+}
 
 	footer h4 {
 		margin-top: 4em;
