@@ -764,6 +764,8 @@ footer .four-column {
 		width: 70%;
 	}
 
+.backToTop { text-align: center; }
+
 	header .container {
 		width: 90%;
 	}
@@ -1325,6 +1327,7 @@ header nav ul li {padding:0 0 0 50px;}
 @media only screen and (max-width:1024px){
 .navbar ul li {margin: 0 15px;}
 .navbar ul li a {font-size:20px;}
+.backToTop { text-align: center; }
 
 }
 @media only screen and (max-width:991px){
@@ -1377,6 +1380,7 @@ header nav ul > li > a{font-size:22px;}
 .cs-img p{line-height:24px;font-size:18px;margin-bottom:5px;}
 .case-image p.italic{line-height:24px;font-size:18px;}
 .case-image h4{padding:15px 0 10px;font-size:22px;}
+.backToTop { text-align: center; }
 
 /* new */
 .hidden-xs{display:none;}
@@ -1410,5 +1414,6 @@ nav .left{float:right;}
 .casestudy h2 {font-size: 20px;line-height: 24px;}
 .cs-caption.two-column p{font-size:18px;line-height:24px;}
 .casestudy p {font-size:22px;margin-bottom:10px;}
+.backToTop { text-align: center; }
 }
 }
