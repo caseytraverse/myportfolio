@@ -574,6 +574,7 @@ footer .four-column {
 		padding: 1.5em 0;
 	}
 
+
 	nav .left {
 		/* width: 100%;
 		text-align: center;
@@ -764,7 +765,6 @@ footer .four-column {
 		width: 70%;
 	}
 
-.backToTop { text-align: center; }
 
 	header .container {
 		width: 90%;
@@ -1285,7 +1285,7 @@ footer .four-column {
 
 .backToTop {
 text-align: center;
-displau: block;
+display: block;
 padding: 20px;
 }
 
@@ -1314,6 +1314,14 @@ padding: 20px;
 	}
 }
 
+.casestudy .cs-caption p {
+	color: #A2A2A2;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 28px;
+	text-align: center;
+	padding-bottom: 35px;
+}
 
 
 /*31-12-2019*/
