@@ -1360,27 +1360,10 @@ header nav ul li {padding:0 0 0 50px;}
 .imgemail{margin:0px auto;}
 .navbar ul li {margin: 0 7px;}
 .navbar ul li a {font-size: 18px;font-weight: 400;}
-header nav ul li {padding:0 0 0 30px;}
-header nav ul > li > a{font-size:22px;}
-.landingL {float: none;width: 100%;text-align: center;}
-.landingR {float: none;width: 100%;text-align: center;}
-.landingL img {max-height: 250px;}
-.worklayout{float:none;text-align:center;}
-.worklayout h1{font-size:28px;}
-.worklayout p.land{font-size:16px;line-height:24px;padding:10px 0;}
-.worklayout .underline{font-size:17px;}
-.work a img {padding-top: 20px;margin-bottom: 10px;}
-.aboutL {padding-right: 25px;}
-.aboutL img {max-height: 100%;padding-right: 0;max-width: 350px;width: 100%; margin-bottom: 3em;}
-.aboutR {margin-top: 20px;text-align: center;}
-.aboutR p.about{font-size:18px;line-height:24px;padding-bottom:10px;}
-.aboutR p{font-size:18px;padding-bottom:10px;}
-.wrapper {padding-left: 20px; padding-right: 20px;}
-#contact input, #contact textarea{width:100%;}
-#contact button[type="submit"] {float:none;margin:0px auto;}
-.contactainer p.contact{font-size:16px;line-height:22px;padding:10px 0 20px;}
-.imgemail {max-width: 200px;max-height: 200px;}
-.contactainer p.contact{font-size:16px;line-height:22px;padding:15px 0;}
+
+
+
+
 
 #socialContact{margin:30px 0; text-align:center; display:block;}
 #socialContact li{margin-right:15px;}
