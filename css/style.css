@@ -216,6 +216,11 @@ a.underline:visited {
 	border-bottom: 2px solid #215D85;
 }
 
+a.project:link {font-family: 'Roboto', sans-serif; font-size: 1em; font-weight: normal; }
+a.project:hover {border-bottom: 2px solid #215D85; }
+a.project:active {color: #A2A2A2; }
+a.project:visited {color: #A2A2A2; }
+
 .about .separate {
 	text-align: center;
 }
@@ -299,6 +304,7 @@ p3 {
 /*-webkit-margin-before: 0;
 	-webkit-margin-after: 0;*/
 }
+
 
 p.hero {
 	font-size: 1.5rem;
@@ -570,10 +576,19 @@ footer .four-column {
 		width: 85%;
 	}
 
+
 	header nav {
 		padding: 1.5em 0;
 	}
 
+	.work-right {
+		padding-top: 1em;
+		padding-bottom: 4em;
+	}
+
+	p.hero {
+		padding-bottom: 2em;
+	}
 
 	nav .left {
 		/* width: 100%;
@@ -765,10 +780,10 @@ footer .four-column {
 		width: 70%;
 	}
 
-
 	header .container {
 		width: 90%;
 	}
+
 
 	header nav ul {
 		display: inline-block;
@@ -965,7 +980,6 @@ footer .four-column {
 /* LAPTOPS & DESKTOPS */
 @media (min-width: 1200px) {
 
-
 	.work {
 		padding-top: 11em;
 }
@@ -980,6 +994,7 @@ footer .four-column {
 		display: inline-block;
 		width: 10%
 	}
+
 .container {
 	width: 80%;
 }
@@ -1337,6 +1352,7 @@ header nav ul li {padding:0 0 0 50px;}
 .navbar ul li a {font-size:20px;}
 .backToTop { text-align: center; }
 
+
 }
 @media only screen and (max-width:991px){
 .left{text-align:center;}
@@ -1344,6 +1360,10 @@ header nav ul li {padding:0 0 0 50px;}
 .imgemail{margin:0px auto;}
 .navbar ul li {margin: 0 7px;}
 .navbar ul li a {font-size: 18px;font-weight: 400;}
+
+
+
+
 
 #socialContact{margin:30px 0; text-align:center; display:block;}
 #socialContact li{margin-right:15px;}
@@ -1390,6 +1410,7 @@ header nav ul > li > a{font-size:22px;}
 .case-image h4{padding:15px 0 10px;font-size:22px;}
 .backToTop { text-align: center; }
 
+
 /* new */
 .hidden-xs{display:none;}
 .visible-xs{display:block;}
@@ -1398,6 +1419,7 @@ header nav ul > li > a{font-size:22px;}
 
 
 }
+
 
 @media only screen and (max-width:580px){
 nav .right{display:none;}
@@ -1422,6 +1444,7 @@ nav .left{float:right;}
 .casestudy h2 {font-size: 20px;line-height: 24px;}
 .cs-caption.two-column p{font-size:18px;line-height:24px;}
 .casestudy p {font-size:22px;margin-bottom:10px;}
-.backToTop { text-align: center; }
+.backToTop { text-align: center;}
+footer { margin: 0;}
 }
 }
