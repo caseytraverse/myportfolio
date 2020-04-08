@@ -1357,8 +1357,8 @@ header nav ul li {padding:0 0 0 50px;}
 .navbar ul li a {font-size: 18px;font-weight: 400;}
 header nav ul li {padding:0 0 0 30px;}
 header nav ul > li > a{font-size:22px;}
-.landingL {float: none;width: 100%;text-align: center;}
-.landingR {float: none;width: 100%;text-align: center;}
+.landingL {float: none;width: 100%;text-align: center;padding-top: 1em;}
+.landingR {float: none;width: 100%;text-align: center;padding-top: 3em;}
 .landingL img {max-height: 250px;}
 .worklayout{float:none;text-align:center;}
 .worklayout h1{font-size:28px;}
