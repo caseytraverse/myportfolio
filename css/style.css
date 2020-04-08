@@ -1364,7 +1364,7 @@ header nav ul > li > a{font-size:22px;}
 .worklayout h1{font-size:28px;}
 .worklayout p.land{font-size:16px;line-height:24px;padding:10px 0;}
 .worklayout .underline{font-size:17px;}
-.work a img {padding-top: 20px;margin-bottom: 10px;}
+.work a img {padding-top: 120px;margin-bottom: 10px;}
 .aboutL {padding-right: 25px;}
 .aboutL img {max-height: 100%;padding-right: 0;max-width: 350px;width: 100%; margin-bottom: 3em;}
 .aboutR {margin-top: 20px;text-align: center;}
@@ -1372,7 +1372,7 @@ header nav ul > li > a{font-size:22px;}
 .aboutR p{font-size:18px;padding-bottom:10px;}
 .wrapper {padding-left: 20px; padding-right: 20px;}
 .imgemail {max-width: 200px;max-height: 200px;}
-.contactainer p.contact{padding:15px 0;}
+.contactainer p.contact{padding:20px 0;}
 .contactainer {float: none; text-align:center;}
 .navbar .no-mobile {display: none;}
 #contact {margin-left: 80px;}
