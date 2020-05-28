@@ -1,19 +1,19 @@
 <?php
 if($_GET['email']!="")
 {
-			$from1="casey.t.sexton@gmail.com";
-			$subject1="New Inquiry at Casey Sexton";
+			$from1="contact@casey-sexton.com";
+			$subject1="New inquiry from your portfolio!";
 			$mailcontent1="<html>
 								<body>
 										<table cellpadding=\"0\" cellspacing=\"0\">
 												<tr>
-														<Td align=\"left\" colspan=\"2\">Hello Admin,</td>
+														<Td align=\"left\" colspan=\"2\">Hello Casey,</td>
 												</tr>
 												<tr>
 														<Td align=\"left\" colspan=\"2\">&nbsp;</td>
 												</tr>
 												<tr>
-														<Td align=\"left\" colspan=\"2\">New Inquiry has been sent with the following details.</td>
+														<Td align=\"left\" colspan=\"2\">A new inquiry has been sent to you with the following details:</td>
 												</tr>
 												<tr>
 														<Td align=\"left\" colspan=\"2\">&nbsp;</td>
@@ -38,7 +38,7 @@ if($_GET['email']!="")
 														<Td align=\"left\" colspan=\"2\">&nbsp;</td>
 												</tr>
 												<tr>
-														<Td align=\"left\" colspan=\"2\">Thanks<br>Casey Sexton<br><a href='caseysexton.com'>Caseysexton.com</a></td>
+														<Td align=\"left\" colspan=\"2\">Thanks<br>Casey Sexton<br><a href='casey-sexton.com'>casey-sexton.com</a></td>
 												</tr>
 								</table>
 								</body>
@@ -50,7 +50,7 @@ if($_GET['email']!="")
 				$headers2  = "MIME-Version: 1.0" . "\r\n";
 				$headers2 .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
 				$headers2 .= "From: ".$from1." <".$from1.">" ;
-				mail("casey.t.sexton@gmail.com",$subject1,$mailcontent1,$headers2);
+				mail("contact@casey-sexton.com",$subject1,$mailcontent1,$headers2);
 
 			}
 			echo "3";

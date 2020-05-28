@@ -15,7 +15,7 @@ img {
 
 
 a {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
   font-weight: 800;
 }
 
@@ -56,9 +56,10 @@ a {
 }
 
 .case-ulist-style li {
-line-height: 28px;
+line-height: 190%;
 font-weight: 300;
 }
+
 
 .work a {
 	color: #000000;
@@ -72,8 +73,8 @@ font-weight: 300;
 }
 
 .case-ulist-style {
-	font-size: 1.5rem;
-	line-height: 28px;
+	font-size: 1.25rem;
+	line-height: 190%;
 	font-weight: normal;
 	list-style-type: circle;
 }
@@ -85,7 +86,6 @@ font-weight: 300;
 	display: inline-block;
 	width: 45%;
 }
-
 
 #content {
 	width: 100%;
@@ -246,14 +246,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 44px;
+	font-size: 2.25rem;
 	font-weight: 800;
 /*-webkit-margin-before: 0;
 	-webkit-margin-after: 0;*/
 }
 
 h2 {
-	font-size: 26px;
+	font-size: 2rem;
 	font-weight: 800;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -262,7 +262,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	font-weight: 800;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -282,8 +282,8 @@ h5 {
 }
 
 p {
-	font-size: 1.5rem;
-	line-height: 28px;
+	font-size: 1.25rem;
+	line-height: 190%;
 	font-weight: normal;
 /*	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;*/
@@ -307,14 +307,14 @@ p3 {
 
 
 p.hero {
-	font-size: 1.5rem;
-	line-height: 28px;
+	font-size: 1.25rem;
+	line-height: 190%;
 	font-weight: 300;
 }
 
 p.land {
-	font-size: 1.5rem;
-	line-height: 28px;
+	font-size: 1.25rem;
+	line-height: 190%;
 	font-weight: 300;
 	display: block;
 	padding-top: 40px;
@@ -322,8 +322,8 @@ p.land {
 }
 
 p.contact {
-	font-size: 1.5rem;
-	line-height: 28px;
+	font-size: 1.25rem;
+	line-height: 190%;
 	font-weight: 300;
 	display: block;
 	padding-top: 40px;
@@ -331,8 +331,8 @@ p.contact {
 }
 
 p.light {
-	font-size: 1.5rem !important;
-	line-height: 28px !important;
+	font-size: 1.25rem !important;
+	line-height: 190% !important;
 	font-weight: 300;
 	display: block;
 	padding-top: 20px;
@@ -340,15 +340,15 @@ p.light {
 }
 
 p.italic {
-	font-size: 1.5rem;
-	line-height: 28px;
+	font-size: 1.25rem;
+	line-height: 190%;
 	font-weight: 300;
 	font-style: italic;
 }
 
 p.about {
-	font-size: 1.5rem;
-	line-height: 28px;
+	font-size: 1.25rem;
+	line-height: 190%;
 	font-weight: 300;
 	display: block;
 	padding-bottom: 20px;
@@ -454,7 +454,7 @@ main div ul {
   margin-top: 0em;
   float: right;
   width: calc(100% - 358px);
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .landingL {
@@ -478,7 +478,7 @@ main div ul {
 
 .work a img {
   padding-top: 50px;
-  width:100%;
+  width: 100%;
 	margin-bottom: 2em;vertical-align: middle;
 }
 .work-right {
@@ -581,6 +581,10 @@ footer .four-column {
 		padding: 1.5em 0;
 	}
 
+	.center {
+		text-align: center;
+	}
+
 	.work-right {
 		padding-top: 1em;
 		padding-bottom: 4em;
@@ -620,8 +624,9 @@ footer .four-column {
 	}
 
 	.casestudies img {
-		width: 100%;
+		width: auto;
 	}
+
 
 	.casestudies .image {
 		padding: 3em 1em .75em 1em;
@@ -693,6 +698,10 @@ footer .four-column {
 	.casestudy .row {
 		margin: 4em 0;
 	}
+
+div.box {
+	text-align: center;
+}
 
 	.hero .cs1 {
 		background-color: #FFFFFF;
@@ -784,6 +793,9 @@ footer .four-column {
 		width: 90%;
 	}
 
+	.center {
+		text-align: center;
+	}
 
 	header nav ul {
 		display: inline-block;
@@ -1149,9 +1161,9 @@ footer .four-column {
 	}
 
 	.case-description h1 {
-		font-size: 2.8em;
+		font-size: 2.25em;
 		margin-top: 0;
-		padding-top: 2em;
+		padding-top: 1.5em;
 		padding-bottom: 1em;
 	}
 
@@ -1242,6 +1254,7 @@ footer .four-column {
 	.casestudy .row {
 		margin: 0em 0;
 		display: inline-block;
+
 	}
 
 	.casestudy .case-heading {
@@ -1268,16 +1281,21 @@ footer .four-column {
 	}
 
 	.casestudy img {
-		width: 100%;
+		width: auto;
 /*		margin-bottom:11em;  */
 		padding-top: 100px;
 		padding-bottom: 50px;
+
 	}
 
 	.casestudy .cs-img-cap {
 		float: right;
 		border-top: 1px solid #A2A2A2;
 		width: 15%;
+	}
+
+	.center {
+		text-align: center;
 	}
 
 	.casestudy .cs-caption {
@@ -1412,6 +1430,7 @@ header nav ul > li > a{font-size:22px;}
 .case-description.right.four-column p.light{font-size:18px;line-height:24px;padding:10px 0;}
 .case-description p {line-height:24px;padding:5px 0;font-size:18px;}
 .casestudy .row {margin:1em 0;}
+.casestudy .center {max-width:100%; height: auto;}
 .hero .cs1 {padding:1em 0;}
 .casestudy h3 {margin-bottom:0;margin-top:0;font-size:22px;padding:5px 0;}
 .case-body p.light{line-height:24px;padding:5px 0;font-size:18px;}
@@ -1456,7 +1475,7 @@ nav .left{float:right;}
 .contactainer p.contact{font-size:16px;line-height:22px;padding:15px 0;}
 .casestudy h3 {font-size:20px;}
 .casestudy h2 {font-size: 20px;line-height: 24px;}
-.cs-caption.two-column p{font-size:18px;line-height:24px;}
+.cs-caption.two-column p{font-size:16px;line-height:24px;}
 .casestudy p {font-size:22px;margin-bottom:10px;}
 .backToTop { text-align: center;}
 footer { margin: 0;}
