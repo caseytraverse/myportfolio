@@ -1436,9 +1436,10 @@ header nav ul > li > a{font-size:22px;}
 .case-body p.light{line-height:24px;padding:5px 0;font-size:18px;}
 .casestudy a{font-size:18px;}
 .casestudy h2{font-size:24px;padding-bottom:0;}
-.case-ulist-style li{line-height:26px;font-size:18px;}
+/*.case-ulist-style li{line-height:26px;font-size:18px;}*/
+
 .cs-img p{line-height:24px;font-size:18px;margin-bottom:5px;}
-.case-image p.italic{line-height:24px;font-size:18px;}
+/*.case-image p.italic{line-height:24px;font-size:18px;}*/
 .case-image h4{padding:15px 0 10px;font-size:22px;}
 .backToTop { text-align: center; }
 #contact {margin-left: 0px;}
@@ -1465,11 +1466,12 @@ nav .left{float:right;}
 #contact button[type="submit"] {float:none;margin:0px auto;}
 .contactainer p.contact{font-size:16px;line-height:22px;padding:10px 0 20px;}
 .imgemail {max-width: 200px;max-height: 200px;}
-.case-image p.italic{line-height:22px;font-size:16px;}
-.case-ulist-style li{line-height:24px;font-size:16px;}
+/*.case-image p.italic{line-height:22px;font-size:16px;}*/
+/*.case-ulist-style li{line-height:24px;font-size:18px;}*/
+.case-ulist-style li { padding-bottom: 20px;}
 .cs-img p{line-height:22px;font-size:16px;}
 .casestudy a{font-size:16px;}
-.case-body p.light{line-height:22px;font-size:16px;}
+.case-body p.light{line-height:22px;font-size:16px; padding-bottom: 20px;}
 .case-description p {line-height:22px;font-size:16px;}
 .case-description.right.four-column p.light{font-size:16px;line-height:22px;}
 .contactainer p.contact{font-size:16px;line-height:22px;padding:15px 0;}
