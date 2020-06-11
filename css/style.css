@@ -355,8 +355,34 @@ p.about {
 }
 
 ::selection {
-    color: #000000;
+    color: #FFFFFF;
     background: #215D85;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #215D85;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+	left: 100px;
+	top: 350px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 .casestudy p {
@@ -1393,6 +1419,7 @@ header nav ul > li > a{font-size:22px;}
 .contactainer p.contact{padding:20px 0;}
 .contactainer {float: none; text-align:center;}
 .navbar .no-mobile {display: none;}
+.tooltiptext { display: none;}
 #contact {margin-left: 80px;}
 #contact input, #contact textarea{width:100%;}
 #contact button[type="submit"] {float:none;margin:0px auto;}
